@@ -1,0 +1,166 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    
+}
+.navbar {
+    position: sticky;
+    top: 0%;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height: 70px;
+    background-color: black;   
+    margin-bottom: 10px;
+}
+.navbar span {
+    font-size: 30px;
+    font-weight: bold;
+    color: rgba(255, 166, 0, 0.998);
+    padding-left: 20px;
+    line-height: 70px;
+}
+.navbar ul{
+    float: right;
+    display: flex;
+    line-height: 70px;
+    padding-right: 20px;
+}
+.navbar ul li {
+    padding: 0px 50px;
+}
+.navbar ul li a{
+    color: white;
+}
+.navbar ul li a:hover{
+    color: orange;
+}
+.navbar ul li:hover{
+    border-bottom: 3px solid orange;
+    
+}
+.navbar ul li:hover a {
+    color: orange;
+}
+
+
+@media (max-width:660px){
+    .navbar ul{
+        position: fixed;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: orange;
+        display: block;
+        text-align: center;
+        left: -100%;
+        transition: 2s;
+    }
+    .navbar ul.slide{
+        left: 0;
+        transition: 2sS;
+    }
+    .navbar ul li{
+        width: 100vw;
+    }
+    .navbar ul li a{
+        border: none;
+    }
+    .navbar ul li:hover{
+        background-color: black;
+    }
+    .menu {
+        float: right;
+        padding: 20px 20px;
+    }
+    .menu .line {
+        width: 30px;
+        height: 5px;
+        background-color: white;
+        display: block;
+        margin-bottom: 5px;
+    }
+
+}
+#orange{
+    fill: orange;
+}
+.panner {
+    background-image: url(imgs/black-and-orange-08.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 663px;
+    margin-top: -10px;
+}
+.pan {
+    background-color: rgb(255, 162, 0);
+    width: 250px;
+    height: 250px;
+    margin-left: 470px;
+    padding-top:50px;
+    padding-left: 50px;
+    border-radius: 50%;
+    margin-top: 30px;
+    animation: siva 3s infinite;
+}
+.app img{
+    border-radius: 80px;
+    border: 6px solid black;
+}
+.app a :hover{
+    border: 3px solid transparent;
+}
+@keyframes siva {
+    from{background-color: black;}
+    to{background-color: orange;}
+}
+.link h1{
+    color: rgb(253, 144, 2);
+    margin-left: 410px;
+    margin-top: 40px;
+    font-weight: bold;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 40px;
+}
+
+@media (max-width:800px){
+    .pan {
+        margin-left: 200px;
+    }
+    .link h1 {
+        margin-left: 170px;
+    }
+}
+@media (max-width:500px){
+    .pan {
+        margin-left: 90px;
+    }
+    .link h1 {
+        margin-left: 30px;
+    }
+}
+@media (max-width:500px){
+    .pan {
+        margin-left: 80px;
+    }
+    .link h1 {
+        margin-left: 20px;
+    }
+}
+i{
+    position: relative;
+    animation: nesh 2s infinite;
+}
+@keyframes nesh {
+    form{
+        top: 0;
+    }
+    to{
+        top: -20px;
+    }
+}
